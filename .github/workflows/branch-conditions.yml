@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "현재 브랜치: ${{ github.ref_name }}"
+          echo "현재 브랜치: ${{ github.ref }}"
 
       - name: Dev Branch Only
         if: ${{ github.ref == 'dev' }}
